@@ -26,12 +26,12 @@ class _SkinningDemoState extends State<SkinningDemo> {
   void _onRiveInit(Artboard artboard) {
     final controller = StateMachineController.fromArtboard(
       artboard,
-      'Motion',
+      'Artboard',
       onStateChange: _onStateChange,
     );
 
     artboard.addController(controller!);
-    _skin = controller.getTriggerInput('Skin');
+    // _skin = controller.getTriggerInput('Skin');
   }
 
   void _onStateChange(String stateMachineName, String stateName) {
@@ -81,8 +81,7 @@ class _SkinningDemoState extends State<SkinningDemo> {
                 FilledButton(
                   onPressed: _swapSkin,
                   style: const ButtonStyle(
-                    backgroundColor:
-                        MaterialStatePropertyAll(Color(0xFF7d99ef)),
+                    backgroundColor: WidgetStatePropertyAll(Color(0xFF7d99ef)),
                   ),
                   child: const Text('Swap Skin'),
                 ),

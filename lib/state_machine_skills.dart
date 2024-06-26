@@ -60,7 +60,7 @@ class _StateMachineSkillsState extends State<StateMachineSkills> {
                       children: [
                         ElevatedButton(
                           child: const Text('Beginner'),
-                          onPressed: () => _levelInput?.value = 0,
+                          onPressed: () => _levelInput?.value = 2,
                         ),
                         const SizedBox(width: 10),
                         ElevatedButton(
@@ -70,7 +70,7 @@ class _StateMachineSkillsState extends State<StateMachineSkills> {
                         const SizedBox(width: 10),
                         ElevatedButton(
                           child: const Text('Expert'),
-                          onPressed: () => _levelInput?.value = 2,
+                          onPressed: () => _levelInput?.value = 0,
                         ),
                       ],
                     ),
